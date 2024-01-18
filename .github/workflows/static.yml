@@ -31,11 +31,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Node build
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
+      - name: npm ci
         run: npm ci
+      - name: npm build
         run: npm run build
       - name: Move CNAME file to dist
         run: mv CNAME dist/
