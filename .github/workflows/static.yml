@@ -32,13 +32,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Node build
-      - uses: actions/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 18
-      - run: npm ci
-      - run: npm run build
+        run: npm ci
+        run: npm run build
       - name: Move CNAME file to dist
-      - run: mv CNAME dist/
+        run: mv CNAME dist/
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
