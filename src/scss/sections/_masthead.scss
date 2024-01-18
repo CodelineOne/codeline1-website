@@ -89,6 +89,10 @@
 
     // Sizing for the device and SVG background circle (lg screen size breakpoint)
     @include media-breakpoint-up(lg) {
+        background-image: url(/assets/img/geometric-bg.svg);
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
         .masthead-device-mockup {
             .circle {
                 width: 90%;
@@ -115,6 +119,7 @@
 
     // Sizing for the device and SVG background circle (xxl screen size breakpoint)
     @include media-breakpoint-up(xxl) {
+        background-size: 50%;
         .masthead-device-mockup {
             .circle {
                 width: 70%;
@@ -126,4 +131,10 @@
         }
     }
 
+}
+
+@include media-breakpoint-down(md) {
+    .hero-heading {
+        font-size: calc(3rem + 4.5vw);
+    }
 }
