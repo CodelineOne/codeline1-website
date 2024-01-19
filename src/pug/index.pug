@@ -67,56 +67,44 @@ html(lang='en')
             .container.px-5
                 .row.gx-5.justify-content-center
                     .col-xl-8
-                        .h2.fs-1.text-white.mb-4 "An intuitive solution to a common problem that we all face, wrapped up in a single app!"
-                        img(src='assets/img/tnw-logo.svg', alt='...', style='height: 3rem;')
+                        .h2.fs-1.text-white Our main goal is to deliver software that adds real value to each client.
 
         // App features section
         section#features
-            .container.px-5
+            video#video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
+                source(src='assets/img/animation.mp4', type='video/mp4')
+            .container.px-5.features-cards
                 .row.gx-5.align-items-center
-                    .col-lg-8.order-lg-1.mb-5.mb-lg-0
+                    .col-xxl-8.order-lg-1.mb-5.mb-lg-0
                         .container-fluid.px-5
                             .row.gx-5
                                 .col-md-6.mb-5
                                     // Feature item
                                     .text-center
-                                        i.bi-phone.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Device Mockups
-                                        p.text-muted.mb-0 Ready to use HTML/CSS device mockups, no Photoshop required!
+                                        i.bi-code-slash.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt Software Development
+                                        p.text-muted.mb-0 Solutions for a wide range of platforms, including mobile, desktop, web and cloud-based applications.
                                 .col-md-6.mb-5
                                     // Feature item
                                     .text-center
-                                        i.bi-camera.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Flexible Use
-                                        p.text-muted.mb-0 Put an image, video, animation, or anything else in the screen!
+                                        i.bi-people.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt Technical Consulting
+                                        p.text-muted.mb-0 Are you facing challenges in your software development or deployment proccess? We can help.
                             .row
                                 .col-md-6.mb-5.mb-md-0
                                     // Feature item
                                     .text-center
-                                        i.bi-gift.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Free to Use
-                                        p.text-muted.mb-0 As always, this theme is free to download and use for any purpose!
+                                        i.bi-lightbulb.icon-feature.text-gradient.d-block.mb-3
+                                        h3.font-alt Digital Transformation
+                                        p.text-muted.mb-0 We help businesses find and develop ways to improve their processes and cut costs using technology.
                                 .col-md-6
                                     // Feature item
                                     .text-center
                                         i.bi-patch-check.icon-feature.text-gradient.d-block.mb-3
-                                        h3.font-alt Open Source
-                                        p.text-muted.mb-0 Since this theme is MIT licensed, you can use it commercially!
+                                        h3.font-alt In-house solutions
+                                        p.text-muted.mb-0 We have a variety of white labeled softwares that might meet your needs, this is a cheap and quick option to enter the market.
                     .col-lg-4.order-lg-0
                         // Features section device mockup
-                        .features-device-mockup
-                            include includes/gradient-circle
-                            include includes/shape-1
-                            include includes/shape-2
-                            .device-wrapper
-                                .device(data-device='iPhoneX', data-orientation='portrait', data-color='black')
-                                    .screen.bg-black
-                                        // PUT CONTENTS HERE:
-                                        // * * This can be a video, image, or just about anything else.
-                                        // * * Set the max width of your media to 100% and the height to
-                                        // * * 100% like the demo example below.
-                                        video(muted='muted', autoplay='', loop='', style='max-width: 100%; height: 100%;')
-                                            source(src='assets/img/demo-screen.mp4', type='video/mp4')
 
         // Basic features section
         section.bg-light
