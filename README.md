@@ -1,34 +1,4 @@
-# [Start Bootstrap - New Age](https://startbootstrap.com/theme/new-age/)
-
-[New Age](https://startbootstrap.com/theme/new-age/) is a web app landing page theme for [Bootstrap](https://getbootstrap.com/) created by [Start Bootstrap](https://startbootstrap.com/).
-
-## Preview
-
-[![New Age Preview](https://assets.startbootstrap.com/img/screenshots/themes/new-age.png)](https://startbootstrap.github.io/startbootstrap-new-age/)
-
-**[View Live Preview](https://startbootstrap.github.io/startbootstrap-new-age/)**
-
-## Status
-
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/StartBootstrap/startbootstrap-new-age/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-new-age.svg)](https://www.npmjs.com/package/startbootstrap-new-age)
-
-## Download and Installation
-
-To begin using this template, choose one of the following options to get started:
-
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/theme/new-age/)
-* Install via npm: `npm i startbootstrap-new-age`
-* Clone the repo: `git clone https://github.com/StartBootstrap/startbootstrap-new-age.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/StartBootstrap/startbootstrap-new-age)
-
 ## Usage
-
-### Basic Usage
-
-After downloading, simply edit the HTML and CSS files included with `dist` directory. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
-
-### Advanced Usage
 
 Clone the source files of the theme and navigate into the theme's root directory. Run `npm install` and then run `npm start` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `package.json` file to see which scripts are included.
 
@@ -45,11 +15,8 @@ Clone the source files of the theme and navigate into the theme's root directory
 
 You must have npm installed in order to use this build environment.
 
-## Bugs and Issues
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/StartBootstrap/startbootstrap-new-age/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](https://startbootstrap.com/theme/new-age/).
-
-## About
+## This is a fork from a Start Bootstrap tempalte
 
 Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
 
