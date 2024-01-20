@@ -1,0 +1,19 @@
+///
+/// Tech Expertise section
+/// 
+
+
+.tech-logo {
+    width: 100px;
+    transition: all .3s ease;
+    filter: grayscale(50%);
+
+    &:hover {
+        filter: grayscale(0);
+        cursor: pointer;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 80px;
+    }
+}
