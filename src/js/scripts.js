@@ -25,6 +25,7 @@ window.addEventListener('DOMContentLoaded', async event => {
             }
         });
     });
+    initializeContactForm();
 
     let productWords = ['Vision.', 'Product.', 'Idea.']
     let productHeroHeadingId = 'productHeroHeading'
@@ -74,4 +75,30 @@ function deleteTypewriter(targetId) {
         }
         deleteLetter();
     });
+}
+
+function initializeContactForm() {
+    let form = document.getElementById('contactForm');
+    const contactModal =  new bootstrap.Modal('#contactModal');
+    const successMessage = document.getElementById('successMessage')
+    form.onsubmit = async (e) => {
+        e.preventDefault();
+
+        await fetch('https://formkeep.com/f/cc3f3607fe41', {
+            method: 'POST',
+            body: new FormData(form)
+        });
+
+        //display success message
+        successMessage.classList.remove('d-none');
+
+        //disable button
+        var button = document.getElementById('submitButton')
+        button.disabled = 'disabled';
+
+        //close modal
+        setTimeout(_ => {
+            contactModal.hide();
+        }, 5000)
+    };
 }
